@@ -14,7 +14,7 @@ def teardown_session(exception):
     storage.close()
 
 
-@app.route('/states/', strict_slashes=False)
+@app.route('/states', strict_slashes=False)
 @app.route('/states/<id>', strict_slashes=False)
 def display_html(id=None):
     """ Handles /states route """
